@@ -33,8 +33,9 @@ const loginAccount = async (emailorname, password) => {
         if (account.length !== 0){
             return account;
     } else {
-        throw new Error('Failed To Login');
+        throw new Error ('Failed To Login');
         }
+        
     }
     catch (error){
      throw error;

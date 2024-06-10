@@ -3,6 +3,7 @@ const {registerAccount, loginAccount, getAccountByID, topUp, setPicture, forgotP
 
 const handleRegister = async (req, res) => {
     const {username, useremail, userpassword, gender,  usertype} = req.body;
+    console.log(username);
     try {
         const account = await registerAccount(username, useremail, userpassword, gender,  usertype);
         return res.status(200).json({ message: 'Register successful', account: account });

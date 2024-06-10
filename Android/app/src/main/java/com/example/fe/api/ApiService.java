@@ -34,8 +34,13 @@ public interface ApiService {
     //Consule
 
 
+    //Medicine
     @GET("anxietyBuddy/getMedicine")
     Call<Medicine> getMedicine (@Body Medicine medicine);
+
+    //Journal
+
+    //Order
 }
 
 

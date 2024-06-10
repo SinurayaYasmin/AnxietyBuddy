@@ -29,10 +29,10 @@ const getDoctorByID = async (doctorID) => {
         );
 
         const doctor = result.rows[0];
-        if (doctor.length !==0){
+        if (doctor){
             return doctor;
     } else {
-            throw new Error('Failed to get doctor`s detail by doctorID');
+            throw new Error('Failed to get doctor`s detail by doctorID : ' . doctor);
         }
     }
     catch (error){
