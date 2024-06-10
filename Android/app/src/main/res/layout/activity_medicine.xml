@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6EB"
+    tools:context=".activity.MedicineActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetitlepage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.025" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetab"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineleft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineshop1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineshop2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinejournal1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinejournal2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineremove"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineconsule1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineconsule2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineicon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineiconshop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.903" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemidl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemidr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelinemenu"
+
+        >
+
+    </View>
+
+    <ImageView
+        android:id="@+id/profileicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/profilemenu"
+        android:layout_marginTop="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineremove"
+        app:layout_constraintEnd_toEndOf="@id/guidelineright"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+
+
+    <ImageView
+        android:id="@+id/journalicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/journal"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelinejournal1"
+        app:layout_constraintEnd_toEndOf="@id/guidelinejournal2"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+
+
+    <ImageView
+        android:id="@+id/consuleicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/consule"
+        android:layout_marginTop="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineconsule1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineconsule2"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+
+    <View
+        android:id="@+id/selectormenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selectormenu"
+        app:layout_constraintStart_toStartOf="@id/guidelineshop1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineshop2"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+    <ImageView
+        android:id="@+id/shopicon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/shop"
+        android:layout_marginTop="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineshop1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineshop2"
+        app:layout_constraintTop_toTopOf="@id/guidelineiconshop"
+        />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1B5B2"
+        app:tabTextColor="@color/light_pink"
+        app:tabIndicatorColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/guidelineleft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineright"
+        app:layout_constraintTop_toTopOf="@id/guidelinetab"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Skin" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mouth" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fever" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergy" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitamin" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store"
+        android:fontFamily="@font/passionone"
+        android:textSize="35sp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="@id/guidelinetitlepage"
+        app:layout_constraintStart_toStartOf="@id/guidelinemidl"
+        app:layout_constraintEnd_toEndOf="@id/guidelinemidr"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

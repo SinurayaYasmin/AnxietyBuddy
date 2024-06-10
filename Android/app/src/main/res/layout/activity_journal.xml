@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6EB"
+    tools:context=".activity.JournalActivity">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetitlepage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.025" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineleft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineshop1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineshop2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinejournal1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinejournal2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineremove"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineconsule1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineconsule2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineicon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineiconshop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.903" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemoodtext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemoodbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemidl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemidr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinemood"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.165" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinehappy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinesad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.21" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineangry"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinedisappointed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.51" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinenervous"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineanxious"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinebutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.315" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinebuttonsave"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.835" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinewritetitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinewrite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelinemenu"
+
+        >
+
+    </View>
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/profileicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/profilemenu"
+        android:layout_marginTop="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineremove"
+        app:layout_constraintEnd_toEndOf="@id/guidelineright"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+
+
+    <View
+        android:id="@+id/selectormenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selectormenu"
+        app:layout_constraintStart_toStartOf="@id/guidelinejournal1"
+        app:layout_constraintEnd_toEndOf="@id/guidelinejournal2"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+    <ImageView
+        android:id="@+id/journalicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/journal"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelinejournal1"
+        app:layout_constraintEnd_toEndOf="@id/guidelinejournal2"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+
+
+    <ImageView
+        android:id="@+id/consuleicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/consule"
+        android:layout_marginTop="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineconsule1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineconsule2"
+        app:layout_constraintTop_toTopOf="@id/guidelineicon"
+        />
+
+    <ImageView
+        android:id="@+id/shopicon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/shop"
+        android:layout_marginTop="5sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineshop1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineshop2"
+        app:layout_constraintTop_toTopOf="@id/guidelineiconshop"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How was your mood today?"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="#333333"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelinetitle"
+
+        />
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/guidelinebutton"
+        app:layout_constraintStart_toStartOf="@id/guidelinehappy"
+        >
+
+    <RadioButton
+        android:id="@+id/happybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_brown"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinebutton"
+        app:layout_constraintStart_toStartOf="@id/guidelinehappy"
+        app:layout_constraintEnd_toStartOf="@id/guidelinesad"
+         />
+    <RadioButton
+        android:id="@+id/sadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_brown"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinebutton"
+        app:layout_constraintStart_toStartOf="@id/guidelinesad"
+        app:layout_constraintEnd_toStartOf="@id/guidelineangry"
+        />
+    <RadioButton
+        android:id="@+id/anxiousbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_brown"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinebutton"
+        app:layout_constraintStart_toStartOf="@id/guidelineangry"
+        app:layout_constraintEnd_toStartOf="@id/guidelinedisappointed" />
+        />
+    <RadioButton
+        android:id="@+id/disappointedbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_brown"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinebutton"
+        app:layout_constraintStart_toStartOf="@id/guidelinedisappointed"
+        app:layout_constraintEnd_toStartOf="@id/guidelinenervous"
+        />
+    <RadioButton
+        android:id="@+id/nervousbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_brown"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinebutton"
+        app:layout_constraintStart_toStartOf="@id/guidelinenervous"
+        app:layout_constraintEnd_toStartOf="@id/guidelineanxious"
+        />
+    <RadioButton
+        android:id="@+id/angrybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_brown"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinebutton"
+        app:layout_constraintStart_toStartOf="@id/guidelineanxious"
+        app:layout_constraintEnd_toEndOf="@id/guidelineright"
+        />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/happy"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        app:srcCompat="@drawable/happy"
+        app:layout_constraintTop_toTopOf="@id/guidelinemood"
+        app:layout_constraintStart_toStartOf="@id/guidelinehappy"
+        app:layout_constraintEnd_toStartOf="@id/guidelinesad"
+        />
+    <ImageView
+        android:id="@+id/sad"
+        android:layout_width="80sp"
+        android:layout_height="75sp"
+        app:srcCompat="@drawable/sad"
+
+        app:layout_constraintTop_toTopOf="@id/guidelinemood"
+        app:layout_constraintStart_toStartOf="@id/guidelinesad"
+        app:layout_constraintEnd_toStartOf="@id/guidelineangry"
+       />
+    <ImageView
+        android:id="@+id/anxious"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        app:srcCompat="@drawable/anxious"
+        android:layout_marginTop="3sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemood"
+        app:layout_constraintStart_toStartOf="@id/guidelineangry"
+        app:layout_constraintEnd_toStartOf="@id/guidelinedisappointed" />
+    <ImageView
+        android:id="@+id/disappointed"
+        android:layout_width="80sp"
+        android:layout_height="70sp"
+        app:srcCompat="@drawable/disappointed"
+        android:layout_marginTop="3sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemood"
+        app:layout_constraintStart_toStartOf="@id/guidelinedisappointed"
+        app:layout_constraintEnd_toStartOf="@id/guidelinenervous"
+        />
+
+    <ImageView
+        android:id="@+id/nervous"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        app:srcCompat="@drawable/nervous"
+        android:layout_marginTop="3sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemood"
+        app:layout_constraintStart_toStartOf="@id/guidelinenervous"
+        app:layout_constraintEnd_toStartOf="@id/guidelineanxious"
+        />
+    <ImageView
+        android:id="@+id/angry"
+        android:layout_width="80sp"
+        android:layout_height="70sp"
+        app:srcCompat="@drawable/angry"
+        android:layout_marginTop="3sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemood"
+        app:layout_constraintStart_toStartOf="@id/guidelineanxious"
+        app:layout_constraintEnd_toEndOf="@id/guidelineright"
+        />
+
+
+    <TextView
+        android:id="@+id/happytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemoodtext"
+        app:layout_constraintStart_toStartOf="@id/guidelinehappy"
+        app:layout_constraintEnd_toStartOf="@id/guidelinesad"
+        />
+    <TextView
+        android:id="@+id/sadtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sad"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemoodtext"
+        app:layout_constraintStart_toStartOf="@id/guidelinesad"
+        app:layout_constraintEnd_toStartOf="@id/guidelineangry"
+        />
+    <TextView
+        android:id="@+id/anxioustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anxious"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemoodtext"
+        app:layout_constraintStart_toStartOf="@id/guidelineangry"
+        app:layout_constraintEnd_toStartOf="@id/guidelinedisappointed"
+        />
+    <TextView
+        android:id="@+id/nervoustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nervous"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemoodtext"
+        app:layout_constraintStart_toStartOf="@id/guidelinenervous"
+        app:layout_constraintEnd_toStartOf="@id/guidelineanxious"
+        />
+    <TextView
+        android:id="@+id/disappointedtext"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:text="Disappointed"
+        android:gravity="center"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="1sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemoodtext"
+        app:layout_constraintStart_toStartOf="@id/guidelinedisappointed"
+        app:layout_constraintEnd_toStartOf="@id/guidelinenervous"
+        />
+    <TextView
+        android:id="@+id/angrytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angry"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinemoodtext"
+        app:layout_constraintStart_toStartOf="@id/guidelineanxious"
+        app:layout_constraintEnd_toEndOf="@id/guidelineright"
+        />
+
+    <TextView
+        android:id="@+id/writetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write something about today!"
+        android:fontFamily="@font/patrickhand"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/guidelinewritetitle"
+        app:layout_constraintStart_toStartOf="@id/guidelinemidl"
+        app:layout_constraintEnd_toEndOf="@id/guidelinemidr"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="285sp"
+        android:ems="15"
+        android:gravity="start|top"
+        android:background="@drawable/backgrounjournal"
+        android:fontFamily="@font/patrickhand"
+        android:textSize="18sp"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:paddingTop="10sp"
+        android:inputType="textMultiLine"
+        android:text="nvnivnir mormpor nging4 ngingi54ng gniommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmfmifmi43f fmirfmi43f ifmirfmif irfmirfmirfmgno54g gu ngi5ngi gnit5ngig ngi5ngin gni5ngio ngitng irnirnvirnnvifrvnirnvirnvnnvirnvoirnvi"
+        app:layout_constraintTop_toTopOf="@id/guidelinewrite"
+        app:layout_constraintStart_toStartOf="@id/guidelinehappy"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintBottom_toTopOf="@id/guidelinebuttonsave"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:fontFamily="@font/passionone"
+        android:textSize="20sp"
+        android:backgroundTint="@color/pink_brown"
+        app:layout_constraintTop_toTopOf="@id/guidelinebuttonsave"
+        app:layout_constraintStart_toStartOf="@id/guidelinemidl"
+        app:layout_constraintEnd_toEndOf="@id/guidelinemidr"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood Journal"
+        android:fontFamily="@font/passionone"
+        android:textSize="35sp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="@id/guidelinetitlepage"
+        app:layout_constraintStart_toStartOf="@id/guidelinemidl"
+        app:layout_constraintEnd_toEndOf="@id/guidelinemidr"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

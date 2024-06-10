@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6EB"
+    tools:context=".activity.RegisterActivity">
+
+    <!-- Add a horizontal guideline below the grass -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/loginpageimg"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineleft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetexth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineradioh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineradiov1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineradiov2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinevisible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinevisible3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinevisible2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetextv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineemail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineusername"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinepassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetextvr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60"
+
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinebutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinelogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94"
+
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/imageView2"
+        android:background="@drawable/login"
+        app:layout_constraintStart_toStartOf="@id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+
+        >
+
+    </View>
+
+    <TextView
+        android:id="@+id/registertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:fontFamily="@font/passionone"
+        android:textColor="#FFF6EB"
+        android:textSize="40sp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@id/guidelinetextv"
+        app:layout_constraintEnd_toEndOf="@id/guidelinetextvr"
+        app:layout_constraintTop_toTopOf="@id/guidelinetexth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        />
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AnxietyBuddy"
+        android:fontFamily="@font/reeniebeanie"
+        android:textColor="#FFF6EB"
+        android:textSize="35sp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@id/guidelinetextv"
+        app:layout_constraintEnd_toEndOf="@id/guidelinetextvr"
+        app:layout_constraintTop_toBottomOf="@id/registertitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:ems="10"
+        android:background="#FFF6EB"
+        android:inputType="textEmailAddress"
+        android:hint=" Input your E-Mail"
+        android:textColorHint="#682A4208"
+        android:textColor="@color/black"
+        android:fontFamily = "@font/patrickhand"
+        app:layout_constraintStart_toStartOf="@id/guidelinetextv"
+        app:layout_constraintEnd_toEndOf="@id/guidelinetextvr"
+        app:layout_constraintTop_toTopOf="@id/guidelineemail"
+        />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:ems="10"
+        android:background="#FFF6EB"
+        android:inputType="textEmailAddress"
+        android:hint=" Input your Username"
+        android:textColorHint="#682A4208"
+        android:textColor="@color/black"
+        android:fontFamily = "@font/patrickhand"
+        app:layout_constraintStart_toStartOf="@id/guidelinetextv"
+        app:layout_constraintEnd_toEndOf="@id/guidelinetextvr"
+        app:layout_constraintTop_toTopOf="@id/guidelineusername"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:ems="10"
+        android:background="#FFF6EB"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:hint=" Input your Password"
+        android:textColorHint="#682A4208"
+        android:fontFamily = "@font/patrickhand"
+        app:layout_constraintStart_toStartOf="@id/guidelinetextv"
+        app:layout_constraintEnd_toEndOf="@id/guidelinetextvr"
+        app:layout_constraintTop_toBottomOf="@id/guidelinepassword"
+        />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="300sp"
+        android:layout_height="45sp"
+        android:text="REGISTER"
+        android:fontFamily="@font/passionone"
+        android:textSize="23sp"
+        android:backgroundTint="@color/pink_brown"
+        app:layout_constraintStart_toStartOf="@id/guidelinetextv"
+        app:layout_constraintEnd_toEndOf="@id/guidelinetextvr"
+        app:layout_constraintTop_toBottomOf="@id/guidelinebutton"
+        />
+
+    <TextView
+        android:id="@+id/clickable_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account?! Login Here!"
+        android:textColor="#CB2A4208"
+        android:onClick="onTextClick"
+        android:fontFamily="@font/patrickhand"
+        android:padding="10dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@id/guidelinetextv"
+        app:layout_constraintEnd_toEndOf="@id/guidelinetextvr"
+        app:layout_constraintTop_toBottomOf="@id/guidelinelogin"
+
+        />
+
+
+
+        <RadioButton
+            android:id="@+id/radioButtonPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CB273217"
+            android:fontFamily="@font/patrickhand"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/guidelineradioh"
+            app:layout_constraintStart_toStartOf="@id/guidelineradiov1"
+            android:text="PATIENT" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CB273217"
+            android:fontFamily="@font/patrickhand"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/guidelineradioh"
+            app:layout_constraintStart_toStartOf="@id/guidelineradiov2"
+            android:text="DOCTOR" />
+
+
+    <Button
+        android:id="@+id/togglePasswordVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/transparant"
+        android:backgroundTint="@color/transparant"
+        app:layout_constraintTop_toTopOf="@+id/guidelinevisible2"
+        app:layout_constraintStart_toStartOf="@+id/guidelinevisible"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinevisible3"
+        android:text="👁"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
