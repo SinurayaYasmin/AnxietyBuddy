@@ -1,9 +1,31 @@
-<h1 align="center">Hi 👋, I'm Yasmin Devina Sinuraya</h1>
-- 👨‍💻 Project [AnxietyBuddy](AnxietyBuddy)
+<h1 align="left">AnxietyBuddy</h1>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+###
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> </p>
+<p align="left">AnxietyBuddy adalah aplikasi berbasi Android yang dapat memiliki beberapa fitur, seperti MoodJournal, Consule, dan Medicine Store.</p>
+
+###
+
+<h2 align="left">Fitur</h2>
+
+###
+
+<p align="left">📚 MoodJournal<br>Fitur MoodJournal dapat digunakan oleh user untuk menuliskan keseharian mereka. Terdapat button yang menggambarkan mood mereka hari ini, dan mereka dapat menuliskan keseharian mereka di sini.<br><br>🎲 Consule<br>Fitur Consule dapat digunakan oleh user untuk berkonsultasi dengan dokter pilihan mereka. Dari consule ini, dokter bisa memberikan recipe obat yang akan diberikan kepada user. <br><br>🎯Medicine Store<br>Fitur Medicine Store adalah fitur yang dapat digunakan oleh user untuk membeli obat. Pembelian obat ini dapat dilakukan dengan menggunakan resep yang diberikan oleh dokter, atau user yang ingin membelinya sendiri. Di Page MEdicine Store, akan ditampilkan seluruh obat dari 5 jenis obat yang ada, yaitu jenis obat Skin, Fever, Mouth, Allergy, dan Vitamin.</p>
+
+###
+
+<h2 align="left">Tools</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
+</div>
+
+###
