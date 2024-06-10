@@ -91,6 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                     //So the checking is based on message that already configured in backend
                     if (loginResponse.getMessage().equals("Success To Login Your Account!")){
                         Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        navigateToProfilePage();
                     }
                     else {
                       showErrorDialog("Login Failed", loginResponse.getMessage());
@@ -135,6 +136,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void navigateForgotPassword() {
         Intent intent = new Intent(LoginActivity.this, ForgotPassword.class);
+        startActivity(intent);
+    }
+
+    private void navigateToProfilePage() {
+        Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
         startActivity(intent);
     }
 }

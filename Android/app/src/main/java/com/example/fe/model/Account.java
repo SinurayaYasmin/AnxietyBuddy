@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 
 public class Account {
     private String useremail;
+    String userid, userbalance, profile_picture;
     private String userpassword;
     private String gender;
     private String usertype;
@@ -13,6 +14,7 @@ public class Account {
     private String username;
     private Integer balance;
     private String imageUrl;
+    private String userID;
 
 
     public Account(String email, String password){
@@ -45,6 +47,18 @@ public class Account {
         this.usertype = usertype;
 
     }
+
+    public Account(String userid, String name, String email, String gender, String password, String usertype, String balance, String picture){
+        this.useremail = email;
+        this.username = name;
+        this.userID = userid;
+        this.userbalance = balance;
+        this.profile_picture = picture;
+        this.userpassword = password;
+        this.gender = gender;
+        this.usertype = usertype;
+
+    }
     public void setUseremail (String useremail){
         this.useremail = useremail;
     }
@@ -56,5 +70,9 @@ public class Account {
     }
     public String  getUserpassword (){
         return this.userpassword;
+    }
+
+    public String getUserID (){
+        return this.userID;
     }
 }

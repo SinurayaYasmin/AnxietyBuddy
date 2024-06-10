@@ -2,7 +2,7 @@ package com.example.fe.response;
 
 public class Response {
     private boolean success;
-    private String message;
+    private String message, userID;
 
     // Constructor
     public Response (boolean success, String message) {
@@ -23,6 +23,10 @@ public class Response {
     // Getter untuk message
     public String getMessage() {
         return message;
+    }
+
+    public String getUserID() {
+        return userID;
     }
 
     // Setter untuk message

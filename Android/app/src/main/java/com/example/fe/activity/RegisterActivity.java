@@ -30,8 +30,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText userEmail, userPassword, userName;
     private Button registerButton, togglePasswordVisibility;
-    private RadioButton patient, doctor;
-    private String usertype;
+    private RadioButton patient, doctor, male, female;
+    private String usertype, gender;
     private TextView navigateLogin;
     private ApiService apiService;
 
@@ -53,6 +53,8 @@ public class RegisterActivity extends AppCompatActivity {
         userName = findViewById(R.id.username);
         patient = findViewById(R.id.radioButtonPatient);
         doctor = findViewById(R.id.radioButtonDoctor);
+        male = findViewById(R.id.radioButtonMale);
+        female = findViewById(R.id.radioButtonFemale);
         registerButton = findViewById(R.id.registerbutton);
 
 
@@ -76,6 +78,21 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+
+        male.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                gender = "MALE";
+            }
+        });
+
+        female.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                gender = "FEMALE";
+            }
+        });
+
         doctor.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -93,7 +110,7 @@ public class RegisterActivity extends AppCompatActivity {
                 if (email.isEmpty() || password.isEmpty() || username.isEmpty()) {
                     Toast.makeText(RegisterActivity.this, "Please fill in username, email, and password", Toast.LENGTH_SHORT).show();
                 } else {
-                    RegisterUser(username, email, password, "FEMALE", usertype);
+                    RegisterUser(username, email, password, gender, usertype);
                 }
             }
         });
@@ -101,20 +118,16 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void RegisterUser(String username, String email, String password, String gender, String usertype) {
         Account account = new Account(username, email, password, gender, usertype);
-        Call<Response> call = apiService.registerAccount(account);
+        Call<Account> call = apiService.registerAccount(account);
 
-        call.enqueue(new Callback<Response>() {
+        call.enqueue(new Callback<Account>() {
             @Override
-            public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
+            public void onResponse(Call<Account> call, retrofit2.Response<Account> response) {
                 if (response.isSuccessful()&&response.body() != null) {
-                    Response registerResponse = response.body();
-                    //So the checking is based on message that already configured in backend
-                    if (registerResponse.getMessage().equals("Success To Register Account!")){
-                        Toast.makeText(RegisterActivity.this, "Register Account Successful", Toast.LENGTH_SHORT).show();
-                    }
-                    else {
-                        showErrorDialog("Register Account Failed", registerResponse.getMessage());
-                    }
+                    Account account = response.body();
+                    String userID = account.getUserID();
+                    navigateToProfilePage(userID);
+                    Toast.makeText(RegisterActivity.this, "Register Account Successful"+userID, Toast.LENGTH_SHORT).show();
                 } else {
                     String errorMessage = "";
                     try {
@@ -127,13 +140,13 @@ public class RegisterActivity extends AppCompatActivity {
                         errorMessage = "Error reading error message: " + e.getMessage();
                     }
 
-                    showErrorDialog("Register Account Failed ", errorMessage);
+                    showErrorDialog("Register Account Faiiled ", errorMessage);
                     Log.e(TAG, "Register account failed with response code: " + response.code() + " and message: " + errorMessage);
                 }
             }
 
             @Override
-            public void onFailure(Call<Response> call, Throwable t) {
+            public void onFailure(Call<Account> call, Throwable t) {
                 showErrorDialog("Error", t.getMessage());
                 Log.e(TAG, "Register request failed", t);
             }
@@ -143,7 +156,7 @@ public class RegisterActivity extends AppCompatActivity {
     private void showErrorDialog(String title, String message) {
         new AlertDialog.Builder(this)
                 .setTitle(title)
-                .setMessage("A"+message)
+                .setMessage(message)
                 .setPositiveButton(android.R.string.ok, null)
                 .show();
     }
@@ -164,6 +177,12 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void navigateToLogin() {
         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    private void navigateToProfilePage(String userID) {
+        Intent intent = new Intent(RegisterActivity.this, ProfileActivity.class);
+        intent.putExtra("userID", userID);
         startActivity(intent);
     }
 }

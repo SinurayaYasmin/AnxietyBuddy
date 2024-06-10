@@ -13,7 +13,7 @@ public interface ApiService {
 
     //Account
     @POST("anxietyBuddy/account/register")
-    Call<Response> registerAccount(@Body Account user);
+    Call<Account> registerAccount(@Body Account user);
 
     @POST("anxietyBuddy/account/login")
     Call<Response> loginAccount(@Body Account user);
