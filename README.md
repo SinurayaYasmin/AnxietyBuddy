@@ -3,6 +3,8 @@
 ###
 
 <p align="left">AnxietyBuddy adalah aplikasi berbasi Android yang dapat memiliki beberapa fitur, seperti MoodJournal, Consule, dan Medicine Store.</p>
+<p>Link Postman: https://www.postman.com/yasminzz/workspace/anxietybuddy-public/overview</p>
+
 
 ###
 
